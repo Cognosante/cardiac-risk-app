@@ -2,12 +2,10 @@
   "name": "cardiacrisk",
   "version": "0.1.0",
   "scripts": {
-    "serve": "./node_modules/http-server/bin/http-server -p 8000 -c-1 ."
+    "serve": "http-server -p 8000 -c-1 .",
+    "deploy": "aws s3 sync  --exclude .git  . s3://cgs-web/smart-on-fhir/apps/cardiac-risk/ --delete"
   },
   "dependencies": {
-    "fhirclient": "^0.1.9"
-  },
-  "devDependencies": {
-    "http-server": "^0.9.0"
+    "fhirclient": "^0.1.12"
   }
 }

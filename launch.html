@@ -1,15 +1,25 @@
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Cardiac Risk SMART Application</title>
-    <script src="node_modules/fhirclient/fhir-client.js"></script>
-    <script>
-      FHIR.oauth2.authorize({
-        "client_id": "cardiac_risk",
-        "scope":  "patient/*.read"
-      });
-    </script>
-  </head>
-  Loading...
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Cardiac Risk SMART Application</title>
+  <script src="node_modules/fhirclient/fhir-client.js"></script>
+  <script>
+    function relative(url) {
+      return (window.location.protocol + "//" + window.location.host + window.location.pathname).match(/(.*\/)[^\/]*/)[
+        1] + url;
+    }
+
+    console.log(relative("index.html"));
+
+    FHIR.oauth2.authorize({
+      "client_id": "cardiac_risk",
+      "scope": "patient/*.read",
+      "redirect_uri": relative("index.html")
+    });
+  </script>
+</head>
+Loading...
+
 </html>

@@ -1,0 +1,16 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url":
+        "http://localhost:8000/launch.html?iss=https%3A//healthshare.dev.cognosante.cc/csp/healthshare/fhiraccess2/fhiraccessoauth&launch=eyAibXBpaWQiOiIxMDAwMDAwMTkiLCAiYWNjZXNzX3Rva2VuIjogImV5SjBlWEFpT2lKS1YxUWlMQ0poYkdjaU9pSnViMjVsSW4wLmV5SnFkR2tpT2lKb2RIUndjem92TDJobFlXeDBhSE5vWVhKbExtUmxkaTVqYjJkdWIzTmhiblJsTG1OakwyOWhkWFJvTWk0NVYwNWpXV3Q0VEc1SGNVOHlTekpWZUZkNWFUVlROWFJtZVZFaUxDSnBjM01pT2lKb2RIUndjem92TDJobFlXeDBhSE5vWVhKbExtUmxkaTVqYjJkdWIzTmhiblJsTG1OakwyOWhkWFJvTWlJc0luTjFZaUk2SW5SbGMzUWlMQ0psZUhBaU9qRTFNVEEwTURRM09USXNJbUYxWkNJNkltaDBkSEJ6T2k4dmMySXRZWEJ3Y3k1emJXRnlkR2hsWVd4MGFHbDBMbTl5Wnk5aGNIQnpMMk5oY21ScFlXTXRjbWx6YXk4aUxDSm9aV0ZzZEdoemFHRnlaVjl5YjJ4bGN5STZXMTBzSW1obFlXeDBhSE5vWVhKbFgzVnpaWEp1WVcxbElqb2lkR1Z6ZENJc0ltNWhiV1VpT2lKMFpYTjBJSFJsYzNRaWZRLiIgfQ==",
+      "webRoot": "${workspaceRoot}"
+    }
+  ]
+}
